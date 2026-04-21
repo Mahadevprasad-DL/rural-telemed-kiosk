@@ -1,0 +1,15 @@
+{
+  "name": "telemed-kiosk-backend-compat",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prestart": "node ../scripts/ensure-port-free.js",
+    "start": "node ../server.js",
+    "predev": "node ../scripts/ensure-port-free.js",
+    "dev": "node ../server.js"
+  },
+  "dependencies": {
+    "telemed-kiosk-backend": "file:.."
+  }
+}
